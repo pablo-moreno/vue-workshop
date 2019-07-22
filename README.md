@@ -2,12 +2,12 @@
 
 ## Project setup
 
-Create environment variables file
+Create .env file and setup your environment variables.
 ```
 cp .env.example .env
 ```
 
-Then, setup your environment variables.
+Then, install dependencies.
 
 ```
 npm install
