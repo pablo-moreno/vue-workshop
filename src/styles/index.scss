@@ -1,0 +1,41 @@
+@import './colors.scss';
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: $primary;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+button {
+  border: none;
+  background-color: $primary;
+  color: white;
+  padding: 1em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 120%;
+
+  &:hover {
+    background-color: $primary-light;
+  }
+}
+
+.red {
+  background-color: $red;
+
+  &:hover {
+    background-color: $red-light;
+  }
+}
+
+input {
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 120%;
+  border: solid 1px #eaeaea;
+  margin-bottom: 1em;
+}
