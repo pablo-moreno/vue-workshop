@@ -15,7 +15,8 @@
 
       <template #empty>
         <h4>
-          You must be really hating kittens to not like anyone :(
+          Your soul must be really dark so you really don't love any of this
+          creatures from heaven.
         </h4>
       </template>
 
@@ -44,8 +45,8 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 320px;
-  height: calc(320px * 4 / 3);
+  height: 480px;
+  width: auto;
   border-radius: 8px;
 }
 </style>

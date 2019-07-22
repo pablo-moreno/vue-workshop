@@ -17,7 +17,7 @@ export default {
     },
     unmatch(state, kitten) {
       state.catindr.kittens = removeItem(state.catindr.kittens, kitten)
-    }
+    },
   },
   actions: {
     addKittens({ commit }, kittens) {

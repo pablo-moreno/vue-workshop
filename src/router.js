@@ -44,11 +44,11 @@ const router = new Router({
   ]
 })
 
+// Navigation Guards: https://router.vuejs.org/guide/advanced/navigation-guards.html
 router.beforeEach((to, frm, next) => {
   if (to.meta.protected && !isAuthenticated()) {
     next({ name: 'login' })
-  }
-  else {
+  } else {
     next()
   }
 })

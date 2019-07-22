@@ -17,8 +17,6 @@
 </template>
 
 <script>
-import firebase from '../services/firebase'
-
 export default {
   data() {
     return {
@@ -30,21 +28,22 @@ export default {
     }
   },
   methods: {
-    signUp() {
+    async signUp() {
       if (this.password !== this.repeatPassword) {
         this.error = 'Password mismatch :('
       }
       else {
-        firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
-          .then((user) => {
-            this.$router.push({ name: 'login' })
-          })
-          .catch((reason) => {
-            this.error = reason.message
-          })
+        const auth = this.$firebase.auth()
+        
+        try {
+          const user = await auth.createUserWithEmailAndPassword(this.email, this.password)
+          this.$router.push({ name: 'login' })
+        } catch (error) {
+          this.error = reason.message
+        }
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -9,7 +9,6 @@ const firebaseConfig = {
   messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER,
   appId: process.env.VUE_APP_APP_ID,
 }
-console.log('firebase config', firebaseConfig)
 
 firebase.initializeApp(firebaseConfig)
 

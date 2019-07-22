@@ -10,6 +10,7 @@
     <div>
       <form class="login-form" @submit.prevent="login">
         <h4>Sign-in here</h4>
+        
         <input v-model="email" type="email" placeholder="E-Mail">
         <input v-model="password" type="password" placeholder="Password">
 
@@ -30,8 +31,6 @@
 </template>
 
 <script>
-import firebase from '../services/firebase'
-
 export default {
   data() {
     return {
@@ -43,7 +42,7 @@ export default {
   methods: {
     async login() {
       try {
-        const auth = firebase.auth()
+        const auth = this.$firebase.auth()
         const { user } = await auth.signInWithEmailAndPassword(this.email, this.password)
         this.$store.dispatch('login', user)
         this.$router.push({ name: 'home' })

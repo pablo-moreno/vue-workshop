@@ -6,6 +6,7 @@ import CatindrStore from './catindr.store'
 
 Vue.use(Vuex)
 
+// Vuex: https://vuex.vuejs.org/guide/
 export default new Vuex.Store({
   state: { ...AuthStore.state, ...CatindrStore.state, },
   mutations: { ...AuthStore.mutations, ...CatindrStore.mutations, },

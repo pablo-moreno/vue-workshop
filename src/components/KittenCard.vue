@@ -45,10 +45,9 @@ export default {
   justify-content: center;
   align-items: center;
 
-
   img {
-    width: 320px;
-    height: calc(320px * 4 / 3);
+    height: 480px;
+    width: auto;
     border-radius: 8px;
     box-shadow: 2px 2px 2px #eaeaea;
     cursor: pointer;
@@ -88,5 +87,4 @@ export default {
     }
   }
 }
-
 </style>
