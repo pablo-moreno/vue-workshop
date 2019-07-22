@@ -1,6 +1,14 @@
 # vue-workshop
 
 ## Project setup
+
+Create environment variables file
+```
+cp .env.example .env
+```
+
+Then, setup your environment variables.
+
 ```
 npm install
 ```
