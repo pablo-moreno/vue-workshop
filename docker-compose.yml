@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  build:
+    image: node:10.6.0
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: bash -c "npm i && npm run build"
