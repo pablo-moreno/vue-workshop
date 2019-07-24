@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navbar v-if="isAuthenticated" />
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -17,7 +17,6 @@ export default {
     isAuthenticated: state => state.auth.isAuthenticated,
   })
 }
-
 </script>
 
 <style lang="scss">
@@ -34,6 +33,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-
-
 </style>

@@ -43,7 +43,7 @@ export default {
   display: flex;
   background-color: $primary;
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1em 0;
   justify-content: space-between;
   align-items: center;
 

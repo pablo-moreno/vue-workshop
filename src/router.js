@@ -1,17 +1,17 @@
-import Vue from "vue"
-import Router from "vue-router"
+import Vue from 'vue'
+import Router from 'vue-router'
 import { Home, Login, SignUp, Likes } from './views'
 import { isAuthenticated } from './utils'
 
 Vue.use(Router)
 
 const router = new Router({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/",
-      name: "home",
+      path: '/',
+      name: 'home',
       component: Home,
       meta: {
         protected: true,
@@ -34,8 +34,8 @@ const router = new Router({
       },
     },
     {
-      path: "/likes",
-      name: "likes",
+      path: '/likes',
+      name: 'likes',
       component: Likes,
       meta: {
         protected: true,
